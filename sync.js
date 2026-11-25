@@ -1,7 +1,7 @@
 (()=>{
 const panel=document.getElementById('cloud');
 if(!window.supabase){panel.textContent='Cloud library unavailable. Reconnect and reload.';return;}
-const client=supabase.createClient('https://gosxfidhmsjifitsygwa.supabase.co','sb_publishable_nsdLQtHk8Y_fiA9cDG0-tg_7zGTy9wX');
+const client=supabase.createClient('https://gosxfidhmsijfitsygwa.supabase.co','sb_publishable_nsdLQtHk8Y_fiA9cDG0-tg_7zGTy9wX');
 let user=null,busy=false,ready=false,timer,base=null,rev=null,owner=null;
 const clone=x=>JSON.parse(JSON.stringify(x));
 const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
