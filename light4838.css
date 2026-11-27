@@ -34,10 +34,10 @@ html[data-display=light] #view progress::-moz-progress-bar{background:var(--acce
 /* 4.8.40 — cool neutral surfaces with live accent tint */
 html[data-display=light]{--canvas40:color-mix(in srgb,var(--accent39) 4%,#e9ebef);--surface40:color-mix(in srgb,var(--accent39) 2.5%,#f3f4f6);}
 html[data-display=light] .homeview .progresscard .metric481{background:transparent!important;box-shadow:none!important;}
-html[data-display=light] .homeview .progresscard .metric481:is(:hover,:active,:focus-visible){background:linear-gradient(110deg,color-mix(in srgb,var(--accent39) 65%,#24262d),color-mix(in srgb,var(--accent39) 48%,#24262d))!important;color:white!important;border-radius:8px;}
-html[data-display=light] .homeview .progresscard .metric481:is(:hover,:active,:focus-visible) *{color:white!important;}
-html[data-display=light] .homeview .progresscard .metric481:is(:hover,:active,:focus-visible) .tile{background:transparent!important;box-shadow:none!important;border-color:transparent!important;}
-html[data-display=light] .homeview .progresscard .metric481:is(:hover,:active,:focus-visible) svg{color:white!important;}
+@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover{background:linear-gradient(110deg,color-mix(in srgb,var(--accent39) 65%,#24262d),color-mix(in srgb,var(--accent39) 48%,#24262d))!important;color:white!important;border-radius:8px;}}
+@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover *{color:white!important;}}
+@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover .tile{background:transparent!important;box-shadow:none!important;border-color:transparent!important;}}
+@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover svg{color:white!important;}}
 
 #steps4822 label{display:grid;gap:6px;color:var(--l38-color-aeb5c2,#aeb5c2)}#steps4822 select,#steps4822 input{width:100%;min-width:0;padding:12px;border-radius:12px}#steps4822 .stepsTotal41{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--theme-b83b2b,#b83b2b);border-radius:14px;background:var(--panel48);width:fit-content;min-width:48%;max-width:100%}#steps4822 .stepsTotal41 small,#steps4822 .stepsTotal41 strong{display:block}#steps4822 .stepsTotal41 strong{font-size:22px}#steps4822 .stepsInput41{display:flex;align-items:center;gap:8px}#steps4822 .stepsInput41 input{flex:1}#steps4822 .logsave{margin-top:10px}html[data-display=light] #steps4822{background:var(--surface40)!important;color:var(--ink39)!important}html[data-display=light] #steps4822 .stepsTotal41{background:var(--tint39)!important}html[data-display=light] #steps4822 .checkicon4832{background:var(--tint39)!important;color:var(--accentInk39)!important}
 
