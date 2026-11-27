@@ -1,12 +1,12 @@
 /* Motion layer: no changes to persistence or push delivery. */
-button{transition:transform 150ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 180ms ease; -webkit-tap-highlight-color:transparent}
+button{transition:transform 150ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 180ms ease;-webkit-tap-highlight-color:transparent}
 button:active:not(:disabled){transform:scale(.96)}
-button:focus-visible{outline:2px solid #ff765e;outline-offset:3px}
+button:focus-visible{outline:2px solid var(--theme-ff765e, #ff765e);outline-offset:3px}
 #logcarousel{touch-action:pan-y;overflow:hidden}
-.motion-indicator{position:absolute;pointer-events:none;border:1px solid #ff442b;border-radius:14px;background:linear-gradient(145deg,#70261a,#291411);box-shadow:inset 0 0 14px #ff472d55;transition:transform 320ms cubic-bezier(.2,.8,.2,1),width 320ms,height 320ms,opacity 180ms;left:0;top:0;opacity:0;z-index:-1}
+.motion-indicator{position:absolute;pointer-events:none;border:1px solid var(--theme-ff442b, #ff442b);border-radius:14px;background:linear-gradient(145deg,var(--light38-theme-70261a, var(--theme-70261a, #70261a)),var(--light38-theme-291411, var(--theme-291411, #291411)));box-shadow:inset 0 0 14px var(--theme-ff472d55, #ff472d55);transition:transform 320ms cubic-bezier(.2,.8,.2,1),width 320ms,height 320ms,opacity 180ms;left:0;top:0;opacity:0;z-index:-1}
 @media(max-width:700px){.bottom button[data-page],.bottom button[data-page].active{position:relative;background:transparent!important;border-color:transparent!important;box-shadow:none!important}.bottom button[data-page].active{color:white}}
 dialog[open]::backdrop{animation:motion-backdrop 240ms ease both;backdrop-filter:blur(4px)}
 @keyframes motion-backdrop{from{opacity:0}to{opacity:1}}
-#motion-splash{position:fixed;inset:0;background:#09090b;z-index:99999;pointer-events:none;display:grid;place-items:center}
+#motion-splash{position:fixed;inset:0;background:var(--l38-background-09090b,#09090b);z-index:99999;pointer-events:none;display:grid;place-items:center}
 #motion-splash img{width:min(65vw,330px);height:auto;mix-blend-mode:screen}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}#motion-splash{display:none}}
