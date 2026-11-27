@@ -1,4 +1,4 @@
-window.MOMENTUM_VERSION = "4.9.27";
+window.MOMENTUM_VERSION = "4.9.28";
 window.betaRecovery=/type=recovery/.test(location.hash);
 window.betaFresh=u=>({days:{},supp:[],books:[],profile:{name:u.user_metadata?.first_name||'',firstName:u.user_metadata?.first_name||''},goals:{weight:0,bf:0,steps:10000,pages:10,min:2000,max:2500,workouts:1,reminder:'09:00'}});
 const betaURL=()=>location.origin+location.pathname;

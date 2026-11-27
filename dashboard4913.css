@@ -82,3 +82,22 @@ html body.homeview .progresscard button.metric481::before{content:'';position:ab
 @media(hover:hover) and (pointer:fine){html body.homeview .progresscard button.metric481:hover{background:color-mix(in srgb,var(--theme-ff482e,#ff482e) 13%,transparent)!important}html body.homeview .progresscard button.metric481:hover::before{opacity:0}}
 html body.homeview .progresscard button.metric481:focus-visible{outline:2px solid var(--theme-ff482e,#ff482e);outline-offset:-2px}
 @media(max-width:700px){html body.homeview .progresscard button.metric481{grid-template-columns:28px minmax(0,auto) minmax(0,1fr) auto 12px;gap:5px;padding-inline:12px!important}html body.homeview .progresscard button.metric481 strong{min-width:0;overflow-wrap:anywhere}}
+
+/* 4.9.28: compact, non-scrolling fasting schedule; isolate native time controls. */
+html body dialog#fastsettings4911{overflow:hidden!important;max-height:calc(100dvh - 32px)!important;overscroll-behavior:none;touch-action:manipulation}
+html body dialog#fastsettings4911 form{display:flex;flex-direction:column;gap:0!important;overflow:hidden!important;padding:0 16px 12px!important;min-width:0;touch-action:manipulation}
+html body #fastsettings4911 .b49head{padding:12px 0!important;gap:10px}
+html body #fastsettings4911 .fasttoggle4912{padding:8px 0!important;margin:0!important}
+html body #fastsettings4911 .fastpreview4912{padding:4px 0 8px!important;gap:5px!important;flex-shrink:1;min-height:0}
+html body #fastsettings4911 .fastclock4912{width:min(100%,210px, max(80px,calc(100dvh - 490px)))!important;flex:none}
+html body #fastsettings4911 .fasttimes4912{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:10px!important;width:100%;flex:none}
+html body #fastsettings4911 .fasttimes4912 label{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;overflow:hidden;margin:0!important}
+html body #fastsettings4911 .fasttimes4912 input[type=time]{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;appearance:none;-webkit-appearance:none;padding:8px 4px!important;margin:5px 0 0!important;text-align:center;font-size:16px!important;min-height:42px!important}
+html body #fastsettings4911 input[type=time]::-webkit-date-and-time-value{min-width:0;text-align:center;margin:0}
+html body #fastsettings4911 #fastduration4911{margin:9px 0 5px!important;font-size:14px}
+html body #fastsettings4911 .muted{margin:4px 0!important;font-size:12px;line-height:1.35}
+html body #fastsettings4911 .b49actions{padding:8px 0 0!important;gap:6px!important;flex:none}
+html body #fastsettings4911 .b49actions button{min-height:40px!important;padding:8px!important;margin:0!important}
+@media(max-height:620px){html body #fastsettings4911 .fastclock4912{width:min(100%,100px)!important}html body #fastsettings4911 .fastring4912 strong{font-size:14px}html body #fastsettings4911 .fastring4912 small{font-size:8px}html body #fastsettings4911 .b49head{padding:6px 0!important}html body #fastsettings4911 .fasttoggle4912{padding:4px 0!important}}
+/* Accessibility fallback for exceptionally short viewports (e.g. landscape). */
+@media(max-height:480px){html body dialog#fastsettings4911 form{overflow-y:auto!important}}
