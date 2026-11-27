@@ -26,7 +26,7 @@ function overload489(current,previous){
  const prior=candidates.at(-1);if(!prior)continue;
  for(const e of (session.exercises||[]).filter(valid)){
  const old=(prior.exercises||[]).filter(valid).find(x=>key(x)===key(e));if(!old)continue;
- const dif=[+e.kg- +old.kg,+e.reps- +old.reps,+e.sets- +old.sets].map(x=>Math.abs(x)<1e-6?0:x);
+ const volume=x=>Array.isArray(x.setDetails)?x.setDetails.reduce((a,t)=>a+t.kg*t.reps,0):x.kg*x.reps*x.sets; const dif=[+e.kg- +old.kg,+e.reps- +old.reps,+e.sets- +old.sets,volume(e)-volume(old)].map(x=>Math.abs(x)<1e-6?0:x);
  if(dif.every(x=>x>=0)&&dif.some(x=>x>0))up++;else if(dif.every(x=>x<=0)&&dif.some(x=>x<0))down++;else same++;
  }}
  return {up,down,same,status:up?'green':same?'yellow':down?'red':'grey'};

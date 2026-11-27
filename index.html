@@ -26,3 +26,5 @@ dialog button[aria-label="Close"],dialog button.logclose,dialog button.b49close,
  document.addEventListener('click',e=>{const d=outside;outside=null;if(!d||!d.open||e.target!==d||!hit(e,d))return;e.stopImmediatePropagation();if(d.dataset.requireDone)return;const cancel=new Event('cancel',{cancelable:true});if(d.dispatchEvent(cancel)&&d.open)d.close()},true);
 })();
 </script>
+
+<script>(()=>{if(!/iPhone|iPod|Android.*Mobile/i.test(navigator.userAgent))return;let root=document.documentElement;root.classList.add('phone4929');let d=document.createElement('dialog');d.id='portrait4929';d.innerHTML='<div>Rotate your phone back to portrait<br><small>Momentum is designed for vertical use.</small></div>';document.body.append(d);d.addEventListener('cancel',e=>e.preventDefault());let mq=matchMedia('(orientation: landscape)');function update(){root.classList.toggle('landscape4929',mq.matches);if(mq.matches&&!d.open)d.showModal();else if(!mq.matches&&d.open)d.close()}mq.addEventListener('change',update);update();try{screen.orientation?.lock?.('portrait')?.catch(()=>{})}catch(e){}})();</script>
