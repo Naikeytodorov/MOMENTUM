@@ -21,8 +21,8 @@ html[data-display=light] #overlay .logcard,html[data-display=light] #overlay .lo
 html[data-display=light] #overlay .logcard:before{background:linear-gradient(var(--tint39),transparent);box-shadow:none}
 html[data-display=light] #view .glow48,html[data-display=light] #view .p42card{background:var(--panel48)!important;box-shadow:0 3px 12px #24262d0a!important;border-color:color-mix(in srgb,var(--accent39) 35%,#cbd0d8)!important}
 html[data-display=light] .week47 button.active{background:var(--tint39)!important;color:var(--accentInk39)!important;box-shadow:none!important;border-color:var(--accent39)!important}
-html[data-display=light] .progressrow:hover,html[data-display=light] .progressrow:active,html[data-display=light] .progressrow:focus-within{background:var(--tint39)!important;color:var(--ink39)!important;border-radius:8px}
-html[data-display=light] .progressrow:hover *,html[data-display=light] .progressrow:active *{color:inherit}
+html[data-display=light] .progressrow:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930),html[data-display=light] .progressrow:is(:active:where(html[data-pointer4930=mouse] *),.tap4930),html[data-display=light] .progressrow:focus-within{background:var(--tint39)!important;color:var(--ink39)!important;border-radius:8px}
+html[data-display=light] .progressrow:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930) *,html[data-display=light] .progressrow:is(:active:where(html[data-pointer4930=mouse] *),.tap4930) *{color:inherit}
 html[data-display=light] #view progress{appearance:none;border:0;border-radius:10px;background:#d8dbe1;overflow:hidden}
 html[data-display=light] #view progress::-webkit-progress-bar{background:#d8dbe1;border-radius:10px}
 html[data-display=light] #view progress::-webkit-progress-value{background:var(--accent39);border-radius:10px}
@@ -34,10 +34,10 @@ html[data-display=light] #view progress::-moz-progress-bar{background:var(--acce
 /* 4.8.40 — cool neutral surfaces with live accent tint */
 html[data-display=light]{--canvas40:color-mix(in srgb,var(--accent39) 4%,#e9ebef);--surface40:color-mix(in srgb,var(--accent39) 2.5%,#f3f4f6);}
 html[data-display=light] .homeview .progresscard .metric481{background:transparent!important;box-shadow:none!important;}
-@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover{background:linear-gradient(110deg,color-mix(in srgb,var(--accent39) 65%,#24262d),color-mix(in srgb,var(--accent39) 48%,#24262d))!important;color:white!important;border-radius:8px;}}
-@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover *{color:white!important;}}
-@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover .tile{background:transparent!important;box-shadow:none!important;border-color:transparent!important;}}
-@media (hover:hover) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:hover svg{color:white!important;}}
+@media (hover:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930)) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930){background:linear-gradient(110deg,color-mix(in srgb,var(--accent39) 65%,#24262d),color-mix(in srgb,var(--accent39) 48%,#24262d))!important;color:white!important;border-radius:8px;}}
+@media (hover:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930)) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930) *{color:white!important;}}
+@media (hover:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930)) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930) .tile{background:transparent!important;box-shadow:none!important;border-color:transparent!important;}}
+@media (hover:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930)) and (pointer:fine){html[data-display=light] .homeview .progresscard .metric481:is(:hover:where(html[data-pointer4930=mouse] *),.tap4930) svg{color:white!important;}}
 
 #steps4822 label{display:grid;gap:6px;color:var(--l38-color-aeb5c2,#aeb5c2)}#steps4822 select,#steps4822 input{width:100%;min-width:0;padding:12px;border-radius:12px}#steps4822 .stepsTotal41{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--theme-b83b2b,#b83b2b);border-radius:14px;background:var(--panel48);width:fit-content;min-width:48%;max-width:100%}#steps4822 .stepsTotal41 small,#steps4822 .stepsTotal41 strong{display:block}#steps4822 .stepsTotal41 strong{font-size:22px}#steps4822 .stepsInput41{display:flex;align-items:center;gap:8px}#steps4822 .stepsInput41 input{flex:1}#steps4822 .logsave{margin-top:10px}html[data-display=light] #steps4822{background:var(--surface40)!important;color:var(--ink39)!important}html[data-display=light] #steps4822 .stepsTotal41{background:var(--tint39)!important}html[data-display=light] #steps4822 .checkicon4832{background:var(--tint39)!important;color:var(--accentInk39)!important}
 

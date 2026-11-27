@@ -1,6 +1,6 @@
 /* Motion layer: no changes to persistence or push delivery. */
 button{transition:transform 150ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 180ms ease;-webkit-tap-highlight-color:transparent}
-button:active:not(:disabled){transform:scale(.96)}
+button:is(:active:where(html[data-pointer4930=mouse] *),.tap4930):not(:disabled){transform:scale(.96)}
 button:focus-visible{outline:2px solid var(--theme-ff765e, #ff765e);outline-offset:3px}
 #logcarousel{touch-action:pan-y;overflow:hidden}
 .motion-indicator{position:absolute;pointer-events:none;border:1px solid var(--theme-ff442b, #ff442b);border-radius:14px;background:linear-gradient(145deg,var(--light38-theme-70261a, var(--theme-70261a, #70261a)),var(--light38-theme-291411, var(--theme-291411, #291411)));box-shadow:inset 0 0 14px var(--theme-ff472d55, #ff472d55);transition:transform 320ms cubic-bezier(.2,.8,.2,1),width 320ms,height 320ms,opacity 180ms;left:0;top:0;opacity:0;z-index:-1}

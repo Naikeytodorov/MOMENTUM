@@ -18,7 +18,7 @@ proto.close=function(...args){if(this.id==='drawer47')return close.apply(this,ar
 const logo=document.querySelector('aside .logo');
 if(!reduced()&&logo){
  const splash=document.createElement('div');splash.id='motion-splash';splash.setAttribute('aria-hidden','true');
- const mark=logo.cloneNode();mark.removeAttribute('class');splash.append(mark);document.body.append(splash);
+ const mark=logo.cloneNode();mark.removeAttribute('class');mark.classList.add('motion-startup-logo');splash.append(mark);document.body.append(splash);
  logo.style.visibility='hidden';
  let done=false;
  const reveal=()=>{if(done)return;done=true;logo.style.visibility='';splash.remove();position();};
@@ -26,9 +26,9 @@ if(!reduced()&&logo){
  if(!a.width||!b.width||!mark.animate){reveal();return;}
  const options={duration:650,easing:ease,fill:'forwards'};
  const flight=mark.animate([{transform:'none'},{transform:`translate(${b.left+b.width/2-a.left-a.width/2}px,${b.top+b.height/2-a.top-a.height/2}px) scale(${b.width/a.width})`}],options);
- splash.animate([{backgroundColor:'#09090b'},{backgroundColor:'transparent'}],options);
+ splash.animate([{backgroundColor:getComputedStyle(splash).backgroundColor},{backgroundColor:'transparent'}],options);
  flight.finished.then(reveal,reveal);
  };
- setTimeout(finish,420);setTimeout(reveal,1800);
+ setTimeout(finish,2000);setTimeout(reveal,3000);
 }
 })();
