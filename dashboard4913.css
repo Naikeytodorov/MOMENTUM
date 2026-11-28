@@ -119,3 +119,31 @@ html body dialog.tutorialDialog498 .tutorialActions498>div>button{flex:1;min-wid
 html body #motion-splash{background:#09090b;}
 html[data-display="light"] body #motion-splash{background:#e9ebef;}
 html[data-display="light"] body #motion-splash img{filter:invert(1);mix-blend-mode:multiply;}
+
+/* 4.10.1 workout library layout */
+html body .liftform482 .workoutpicker4101{display:flex!important;flex-direction:column;align-items:stretch;gap:8px;margin:16px 0 10px;width:100%;min-width:0}
+html body .liftform482 .workoutpicker4101 label{display:block!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
+html body .liftform482 .workoutpicker4101 select{display:block;width:100%!important;max-width:100%;min-width:0;box-sizing:border-box;margin:0;min-height:44px}
+html body .liftform482 .workactions4101{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 16px}
+html body .liftform482 .workactions4101 button{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;width:100%;min-height:42px;padding:8px 5px;font-size:clamp(11px,3.2vw,15px);white-space:normal;text-align:center}
+html body .liftform482 .workactions4101 svg{width:17px;height:17px;flex-shrink:0}
+html body .liftform482 .workselected4101{border-top:1px solid color-mix(in srgb,currentColor 16%,transparent);padding-top:15px;margin-bottom:10px}
+html body .liftform482 .workselected4101 h3{margin:7px 0 0;font-size:20px;overflow-wrap:anywhere}
+/* 4.10.2: workout library dialog and intentional focus */
+html body #edit47.manage4102{width:min(92vw,600px);box-sizing:border-box;max-height:86dvh;overflow:auto}
+html body #edit47.manage4102 form{padding:18px!important;box-sizing:border-box;margin:0!important}
+#edit47.manage4102 .manageintro4102{margin:4px 0 16px;opacity:.75;font-size:13px}
+#edit47.manage4102 .default4102{display:flex;align-items:center;gap:8px;max-width:100%;margin:0 0 14px;padding:10px 12px}
+#edit47.manage4102 .library4102{display:grid;gap:8px}
+#edit47.manage4102 .libraryrow4102{display:flex;align-items:center;gap:9px;padding:9px;border:1px solid color-mix(in srgb,currentColor 20%,transparent);border-radius:12px;background:color-mix(in srgb,currentColor 4%,transparent)}
+#edit47.manage4102 .libraryicon4102{display:grid;place-items:center;flex:0 0 32px;height:32px;border-radius:9px;background:color-mix(in srgb,var(--theme-ff482e,#ff482e) 16%,transparent);color:var(--theme-ff482e,#ff482e)}
+#edit47.manage4102 .libraryrow4102 strong{flex:1;min-width:0;overflow-wrap:anywhere;font-size:14px;border-left:1px solid #8885;padding-left:9px}
+#edit47.manage4102 .libraryactions4102{display:flex;gap:5px;flex-shrink:0}
+#edit47.manage4102 .libraryactions4102 button{display:grid;place-items:center;width:34px;height:36px;padding:0!important;margin:0!important;border-radius:8px}
+#edit47.manage4102 svg{width:19px;height:19px;flex-shrink:0}
+#edit47.manage4102 .delete4102{color:#ff6262!important;background:#ff44441a!important;border-color:#ff444466!important}
+#edit47.manage4102 .add4102{width:100%;margin:16px 0 0;padding:12px;color:var(--theme-ff482e,#ff482e);border:1px solid var(--theme-ff482e,#ff482e);background:color-mix(in srgb,var(--theme-ff482e,#ff482e) 8%,transparent)}
+html body #edit47.manage4102 .logsave{margin:12px 0 0!important;width:100%}
+@media(max-width:400px){html body #edit47.manage4102 form{padding:12px!important}#edit47.manage4102 .libraryrow4102{gap:5px;padding:7px}#edit47.manage4102 .libraryactions4102 button{width:30px}#edit47.manage4102 .libraryrow4102 strong{font-size:12px;padding-left:5px}}
+html body :is(button,input,select,textarea,a,[tabindex],[role=button]):focus{outline:none!important}
+html body :is(input,textarea,[contenteditable=true]):focus,html[data-focus4102=keyboard] body :is(button,input,select,textarea,a,[tabindex],[role=button]):focus-visible{outline:2px solid var(--theme-ff482e,#ff482e)!important;outline-offset:2px!important}
